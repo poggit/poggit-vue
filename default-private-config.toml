@@ -1,0 +1,21 @@
+[database]
+host = "127.0.0.1"
+port = 5432
+user = "poggit"
+password = "123456"
+database = "poggit"
+
+[github]
+app_client_secret = ""
+apiaccess_token = ""
+
+[discord]
+new_builds = ""
+new_release = ""
+staff_audit = ""
+abuse_audit = ""
+registrations = ""
+errors = ""
+
+[raw]
+data_dir = "./raw_data" # relative to this file

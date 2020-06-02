@@ -1,0 +1,43 @@
+[domains.backend]
+secure = false
+host = "127.0.0.1"
+port = 8081
+
+[domains.frontend]
+secure = false
+host = "127.0.0.1"
+port = 8082
+
+[domains.raw]
+secure = false
+host = "127.0.0.1"
+port = 8083
+
+[github]
+app_id = 221
+app_client_id = ""
+app_slug = "poggit"
+
+[debug]
+enabled = true
+whitelist_internal_ips = true
+
+[global_quotas]
+max_review_length = 2000
+max_version_length = 31
+max_keyword_count = 5
+max_keyword_length = 20
+min_synopsis_length = 1
+max_synopsis_length = 127
+max_license_length = 65535
+min_changelog_length = 6
+max_changelog_length = 65535
+
+[default_quotas]
+max_weekly_builds = 500
+max_weekly_projects = 7
+max_phar_size = 2MB
+max_zipball_size = 8MB
+
+[discord]
+invite = ""

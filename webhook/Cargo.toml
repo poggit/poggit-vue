@@ -1,0 +1,8 @@
+[package]
+name = "webhook"
+version = "3.0.0"
+authors = ["Poggit <poggitbot@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+config = {path = "../config"}

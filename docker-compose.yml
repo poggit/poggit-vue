@@ -1,0 +1,26 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    volumes:
+      - dbdata:/data/db
+    env_file:
+      - postgres.env
+    ports:
+      - 127.0.0.1:8079:5432
+  diesel:
+    build: ./db
+    env_file:
+      - postgres.env
+  frontend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+  backend:
+    build: ./backend
+  webhook:
+    build:
+      context: .
+      dockerfile: ./webhook/Dockerfile
+volumes:
+  dbdata:
