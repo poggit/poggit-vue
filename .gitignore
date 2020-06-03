@@ -1,5 +1,5 @@
-*.toml
-!default-*.toml
+*-config.toml
+!default-*-config.toml
 node_modules
 target
 build

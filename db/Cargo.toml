@@ -1,0 +1,9 @@
+[package]
+name = "schema"
+version = "3.0.0"
+authors = ["Poggit <poggitbot@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+diesel = {version = "1.4.4", features = ["postgres"]}
+diesel-derive-enum = {version = "1.0.0", features = ["postgres"]}

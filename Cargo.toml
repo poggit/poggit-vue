@@ -1,0 +1,2 @@
+[workspace]
+members = ["backend", "config", "raw", "webhook", "db"]
